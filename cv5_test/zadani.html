@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="UTF-8">
+  </head>
+ <body>
+
+ <h2>Zadani SPJA cv5</h2>
+
+ <ul>
+  <li>Pracujte se souborem atoms.py. Soubor playground.py zajišťuje vykreslování (jeho obsah neměňte). V časových intervalech je volána metoda tick(), kterou naleznete v souboru atoms.py.
+  <li>Zkuste přidat další atomy: atom je reprezentován trojicí hodnot uložených v n-tici (pozice_x, pozice_y, polomer). Tyto trojice se vrací ve funkci tick()
+ <h3>1. (1.5 b)</h3>
+ <ul>
+ <li>Vytvořte třídu Atom, která bude reprezentovat jednotlivé atomy. Třída bude mít kostruktor, kde předejte argumenty x, y, radius a tyto argumenty uložte do odpovídajících instančních proměnných.
+ <li>Ve třídě Atom vytvořte metodu to_tuple(). Metoda bude vracet tuple (x, y, radius) - tak jak je potřeba v metodě tick()
+ <li>V konstruktoru třidy ExampleWorld vytvořte několik instancí třídy Atom. Pomocí metody to_tuple() zavolané na jednotlivé atomy v metodě tick() zajistěte jejich vykreslení.
+ </ul>   
+ <h3>2. (1 b)</h3>
+ <ul>
+  <li>Počet atomů předejte jako argument konstruktoru ExampleWorld. 
+  <li>Pozici a poloměr atomů generujte náhodně (při pozici využijte šířku a výšku plátna). Využijte funkci randint z balíčku random.
+ </ul>
+<h3>3. (1.5 b)</h3>
+ <ul>
+  <li>Rozpohybujte atomy, a to tak, že k souřadnici x/y budete přičítat číselnou hodnotu (rychlost pro směr x/y).
+  <li>Rychlosti předejte v konstruktoru (dohromady tedy bude mít konstruktor parametry pozice_x, pozice_y, rychlost_x, rychlost_y, radius).
+  <li>Vytvořte metodu move() která posune daný atom o vektor rychlosti - tuto metodu je potřeba volat v metodě tick()
+ </ul>     
+<h3>4. (1 b)</h3>
+ <ul>
+  <li>V metodě move() kontrolujte, zda se atom dostal na(za) hranici plátna 
+  <li>V okamžiku, kdy se tak stane, otočte směr jeho pohybu (velikost plátna předejte do funkce v argumentech)
+  </ul>
+ </body>
+ </html>
